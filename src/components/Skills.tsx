@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
           <header>
             <img src={value.iconSrc} alt={value.alt} className='pointer-events-none mx-auto w-20' />
             <h1 className='py-5 text-2xl font-semibold'>{value.title}</h1>
-            <p className='font-normal'>{value.explain}</p>
+            <p className='text-lg font-normal'>{value.explain}</p>
           </header>
           <div className='py-12'>
             <h2 className='text-lg font-medium text-primary'>{value.skillsTitle}</h2>
