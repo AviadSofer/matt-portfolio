@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import RecentWork from './components/RecentWork';
+import Companies from './components/Companies';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <About />
       <Skills />
       <RecentWork />
+      <Companies />
     </div>
   );
 };
