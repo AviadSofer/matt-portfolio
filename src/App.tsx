@@ -2,6 +2,7 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
+import RecentWork from './components/RecentWork';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Header />
       <About />
       <Skills />
+      <RecentWork />
     </div>
   );
 };
