@@ -4,6 +4,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import RecentWork from './components/RecentWork';
 import Companies from './components/Companies';
+import MyStartupTitle from './components/MyStartupTitle';
+import StartupProjects from './components/StartupProjects';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +16,8 @@ const App: React.FC = () => {
       <Skills />
       <RecentWork />
       <Companies />
+      <MyStartupTitle />
+      <StartupProjects />
     </div>
   );
 };
