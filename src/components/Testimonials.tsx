@@ -13,7 +13,8 @@ const Testimonials: React.FC = () => {
       <div className='overflow-hidden whitespace-nowrap'>
         {testimonials.map(({ key, profileSrc, alt, testimonial, name, jobTitle }) => (
           <div
-            className={`inline-block py-14 translate-x-[-${index * 100}%] duration-700 ease-linear`}
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+            className={`inline-block py-14 duration-700 ease-linear`}
             key={key}
           >
             <img src={profileSrc} alt={alt} className='mx-auto w-24 rounded-full' />

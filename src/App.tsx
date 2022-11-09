@@ -8,6 +8,7 @@ import MyStartupTitle from './components/MyStartupTitle';
 import StartupProjects from './components/StartupProjects';
 import CollaboratingWithMe from './components/CollaboratingWithMe';
 import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       <StartupProjects />
       <CollaboratingWithMe />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
