@@ -9,7 +9,10 @@ const RecentWork: React.FC = () => {
       <h1 className='text-2xl font-bold text-font md:text-3xl'>My Recent Work</h1>
       <h2 className='pt-6 text-xl font-semibold text-font'>
         Here are a few past design projects I&apos;ve worked on. Want to see more?
-        <a href='matt@pendeavor.com' className='text-blue-500 hover:text-blue-700'>
+        <a
+          href='https://github.com/AviadSofer/matt-portfolio'
+          className='text-blue-500 hover:text-blue-700'
+        >
           {' '}
           Email me
         </a>
@@ -20,7 +23,11 @@ const RecentWork: React.FC = () => {
           <WorkCard title={title} imgSrc={imgSrc} alt={alt} key={alt} />
         ))}
       </div>
-      <Button filled mxAuto>
+      <Button
+        onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+        filled
+        mxAuto
+      >
         <IoBasketballOutline size={20} className='relative top-[1px] mx-1' />
         <span> See more on Dribbble</span>
       </Button>

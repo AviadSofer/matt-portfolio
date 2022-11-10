@@ -9,7 +9,12 @@ const Footer: React.FC = () => {
         <p className='w-11/12 text-center text-base font-medium text-white md:w-[35%] md:text-lg'>
           Interested in working together? We should queue up a time to chat. I’ll buy the coffee.
         </p>
-        <Button filled greenBorder whiteText>
+        <Button
+          onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+          filled
+          greenBorder
+          whiteText
+        >
           <TbHandRock className='mx-2' size={20} />
           Let&apos;s do this
         </Button>

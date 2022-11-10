@@ -28,15 +28,33 @@ const NavBar: React.FC = () => {
             onClick={() => setNavWindow(true)}
           />
         )}
-        <div className='hidden md:flex '>
-          <Button>Mentorship</Button>
-          <Button filled>Say Hello</Button>
+        <div className='hidden md:flex'>
+          <Button
+            onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+          >
+            Mentorship
+          </Button>
+          <Button
+            filled
+            onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+          >
+            Say Hello
+          </Button>
         </div>
       </div>
 
       <div style={{ display: navWindow ? 'flex' : 'none' }} className='flex-col items-center gap-4'>
-        <Button>Mentorship</Button>
-        <Button filled>Say Hello</Button>
+        <Button
+          onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+        >
+          Mentorship
+        </Button>
+        <Button
+          filled
+          onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+        >
+          Say Hello
+        </Button>
       </div>
     </nav>
   );

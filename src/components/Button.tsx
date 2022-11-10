@@ -1,4 +1,5 @@
 interface Props {
+  onClick: () => void;
   children: React.ReactNode;
   filled?: boolean;
   whiteText?: boolean;
@@ -6,9 +7,10 @@ interface Props {
   greenBorder?: boolean;
 }
 
-const Button: React.FC<Props> = ({ children, filled, mxAuto, greenBorder, whiteText }) => {
+const Button: React.FC<Props> = ({ onClick, children, filled, mxAuto, greenBorder, whiteText }) => {
   return (
     <button
+      onClick={onClick}
       className={
         filled
           ? `${mxAuto ? 'mx-auto' : 'mx-2.5'} flex items-center rounded-full border-2 ${

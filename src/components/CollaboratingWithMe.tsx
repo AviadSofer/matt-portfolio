@@ -10,7 +10,11 @@ const CollaboratingWithMe: React.FC = () => {
       <h2 className='pt-7 pb-16 text-xl font-medium text-font '>
         I’m always open to discussing product design work or partnership opportunities.
       </h2>
-      <Button mxAuto filled>
+      <Button
+        onClick={() => window.open('https://github.com/AviadSofer/matt-portfolio', '_blank')}
+        mxAuto
+        filled
+      >
         <BiMessageDetail className='relative top-0.5 my-auto mx-2' size={25} />
         <span>Start a conversation</span>
       </Button>
