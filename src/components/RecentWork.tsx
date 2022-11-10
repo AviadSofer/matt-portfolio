@@ -6,7 +6,7 @@ import { IoBasketballOutline } from 'react-icons/io5';
 const RecentWork: React.FC = () => {
   return (
     <div className='border-b border-lightGrey px-[6%] pb-40 text-center'>
-      <h1 className='text-3xl font-bold text-font'>My Recent Work</h1>
+      <h1 className='text-2xl font-bold text-font md:text-3xl'>My Recent Work</h1>
       <h2 className='pt-6 text-xl font-semibold text-font'>
         Here are a few past design projects I&apos;ve worked on. Want to see more?
         <a href='matt@pendeavor.com' className='text-blue-500 hover:text-blue-700'>
@@ -15,7 +15,7 @@ const RecentWork: React.FC = () => {
         </a>
         .
       </h2>
-      <div className='grid grid-cols-3 grid-rows-2 gap-6 py-20'>
+      <div className='grid gap-6 py-20 md:grid-cols-2 lg:grid-cols-3'>
         {workCards.map(({ title, imgSrc, alt }) => (
           <WorkCard title={title} imgSrc={imgSrc} alt={alt} key={alt} />
         ))}

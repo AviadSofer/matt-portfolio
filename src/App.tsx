@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className='bg-white'>
+    <div>
       <NavBar />
       <Header />
       <About />

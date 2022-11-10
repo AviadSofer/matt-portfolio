@@ -2,7 +2,7 @@ import skillsColumns from '~/static/skillsColumns';
 
 const Skills: React.FC = () => {
   return (
-    <div className='relative top-[-9rem] mx-[6%] grid grid-cols-3 gap-[1px] overflow-hidden rounded-xl border border-lightGrey bg-lightGrey shadow-md'>
+    <div className='relative top-[-9rem] mx-[6%] grid gap-[1px] overflow-hidden rounded-xl border border-lightGrey bg-lightGrey shadow-md md:grid-cols-3'>
       {skillsColumns.map((value) => (
         <div className='bg-white px-8 py-16 text-center' key={value.id}>
           <header>

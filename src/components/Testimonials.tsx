@@ -5,9 +5,9 @@ const Testimonials: React.FC = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='py-32 text-center'>
-      <h1 className='text-3xl font-semibold'>Testimonials</h1>
-      <h2 className='py-7 text-xl font-semibold'>
+    <div className='mx-[6%] py-32 text-center'>
+      <h1 className='text-2xl font-bold md:text-3xl md:font-semibold'>Testimonials</h1>
+      <h2 className='py-7 text-xl font-medium md:font-semibold'>
         People I’ve worked with have said some nice things...
       </h2>
       <div className='overflow-hidden whitespace-nowrap'>
@@ -18,7 +18,9 @@ const Testimonials: React.FC = () => {
             key={key}
           >
             <img src={profileSrc} alt={alt} className='mx-auto w-24 rounded-full' />
-            <p className='mx-80 whitespace-normal py-12 text-2xl font-normal'>{testimonial}</p>
+            <p className='whitespace-normal py-12 text-xl font-normal md:mx-80 md:text-2xl'>
+              {testimonial}
+            </p>
             <h2 className='text-xl font-semibold'>{name}</h2>
             <h3 className='text-base font-normal'>{jobTitle}</h3>
           </div>
